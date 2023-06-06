@@ -1,0 +1,10 @@
+
+### Добавление новой группы
+
+POST http://localhost:8080/groups HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "name": "19-03"
+}
