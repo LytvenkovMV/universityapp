@@ -2,7 +2,6 @@ package com.example.vitekpirate.repository;
 
 import com.example.vitekpirate.entity.Group;
 import com.example.vitekpirate.entity.Student;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -20,7 +19,6 @@ class GroupRepositoryTest {
     GroupRepository repository;
 
     @Test
-    @Disabled
     void saveGroup() {
 
         // given

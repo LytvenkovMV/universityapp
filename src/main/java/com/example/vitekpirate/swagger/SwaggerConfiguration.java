@@ -1,14 +1,13 @@
 package com.example.vitekpirate.swagger;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-public class Docket {
+public class SwaggerConfiguration {
 
     @Bean
     public springfox.documentation.spring.web.plugins.Docket api() {

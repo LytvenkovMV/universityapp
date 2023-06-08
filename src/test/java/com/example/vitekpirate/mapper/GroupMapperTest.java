@@ -4,7 +4,6 @@ import com.example.vitekpirate.dto.AddGroupRequestDto;
 import com.example.vitekpirate.dto.GetAllGroupResponseDto;
 import com.example.vitekpirate.entity.Group;
 import com.example.vitekpirate.entity.Student;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,7 +21,6 @@ class GroupMapperTest {
     GroupMapper mapper;
 
     @Test
-    @Disabled
     void fromAddGroupRequestDto() {
 
         // given
@@ -37,7 +35,6 @@ class GroupMapperTest {
     }
 
     @Test
-    @Disabled
     void fromGroup() {
 
         // given
