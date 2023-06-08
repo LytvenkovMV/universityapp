@@ -4,8 +4,6 @@ import com.example.vitekpirate.dto.AddGroupRequestDto;
 import com.example.vitekpirate.dto.GetAllGroupResponseDto;
 import com.example.vitekpirate.entity.Group;
 import com.example.vitekpirate.entity.Student;
-import lombok.extern.slf4j.Slf4j;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootApplication
 class GroupMapperTest {
@@ -44,7 +42,7 @@ class GroupMapperTest {
 
         // given
         Group group = new Group();
-        List<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<>();
         LocalDate date;
 
         group.setId(1);
