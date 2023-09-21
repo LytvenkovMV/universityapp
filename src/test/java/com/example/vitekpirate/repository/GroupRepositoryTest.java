@@ -2,32 +2,28 @@ package com.example.vitekpirate.repository;
 
 import com.example.vitekpirate.entity.Group;
 import com.example.vitekpirate.entity.Student;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@DataJpaTest
+@SpringBootTest
 class GroupRepositoryTest {
 
     @Autowired
     GroupRepository repository;
 
     @Test
-    @Disabled
     void saveGroup() {
 
         // given
         Group group = new Group();
-        List<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<>();
         LocalDate date;
 
         group.setId(1);
